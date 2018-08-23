@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One');
+
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+body {
+    height: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.blogbg{
+    
+    height: 200px;
+    background-image: linear-gradient(to right, #fe8c00, #f83600);
+}
+
+
+h1{
+     margin: 0;
+    padding: 0;
+    position: absolute;
+    color: white;
+   font-family: 'Russo One', sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+    top: 10px;
+    left: 160px;
+    transform: translate(50%, 50%);
+    letter-spacing: 1.2px; 
+}
+
+h5{
+    width: 100%;
+    position: absolute;
+    color: white;
+       font-family: 'Russo One', sans-serif;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+    left: 1040px;
+    transition: 1s;
+}
+h5:hover{
+    color: black;
+}
+
+

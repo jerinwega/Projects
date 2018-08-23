@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+body{
+    background-color: black;
+    overflow-y: hidden;
+    
+  
+}
+
+#c1{
+    position: absolute;
+    width: 800px;
+    left: -160px;
+    top: 510px;
+}
+#c2{
+    position: absolute;
+    width: 900px;
+    left:230px;
+    top: 400px;
+}
+#c3{
+     width: 720px;
+    left: 850px;
+    top: 500px;
+    z-index: -1; position:relative;
+}
+
+h4{
+    color: #ff8000;
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: 2px;
+     position:fixed;
+    top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: 100;
+}
+
+
+h5{
+    color: #008000;
+     position:fixed;
+    top: 62.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+.th{
+    font-size: 15px;
+}
+
+.india {
+position:fixed;
+    top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    font-size: 120px;
+ font-family: 'Samarkan';
+  text-align: center;
+  background-image: url("https://www.crossed-flag-pins.com/animated-flag-gif/gifs/India_240-animated-flag-gifs.gif");
+    background-repeat: no-repeat;
+    background-position:center;
+  background-size: 1500px 300px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  
+
+ 
+}
+
+.me{
+    font-family: 'Dosis', sans-serif;
+position:fixed;
+    top: 95%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+    font-weight:bold;
+    color:yellow; 
+    text-align:center;
+/*    margin-top:20px;*/
+}
+
+
+
+
+#ui {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+ padding: 10px;
+    
+ position:fixed;
+    top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#ui .text {
+    width: 500px;
+    position: fixed;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 1.1px;
+    font-size: 45px;
+    font-weight: 300;
+  
+  color: #fff;
+  mix-blend-mode: screen;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+#ui .text:nth-child(1) {
+  -webkit-clip-path: polygon(-30% 0, -20% 0, 20% 100%, 0% 100%);
+          clip-path: polygon(-30% 0, -20% 0, 20% 100%, 0% 100%);
+  -webkit-animation: wave 2000ms -10000ms ease-in-out infinite alternate;
+          animation: wave 2000ms -10000ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(2) {
+  -webkit-clip-path: polygon(-25% 0, -15% 0, 25% 100%, 5% 100%);
+          clip-path: polygon(-25% 0, -15% 0, 25% 100%, 5% 100%);
+  -webkit-animation: wave 2000ms -9800ms ease-in-out infinite alternate;
+          animation: wave 2000ms -9800ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(3) {
+  -webkit-clip-path: polygon(-20% 0, -10% 0, 30% 100%, 10% 100%);
+          clip-path: polygon(-20% 0, -10% 0, 30% 100%, 10% 100%);
+  -webkit-animation: wave 2000ms -9600ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(4) {
+  -webkit-clip-path: polygon(-15% 0, -5% 0, 35% 100%, 15% 100%);
+          clip-path: polygon(-15% 0, -5% 0, 35% 100%, 15% 100%);
+  -webkit-animation: wave 2000ms -9400ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(5) {
+  -webkit-clip-path: polygon(-10% 0, 0% 0, 40% 100%, 20% 100%);
+          clip-path: polygon(-10% 0, 0% 0, 40% 100%, 20% 100%);
+  -webkit-animation: wave 2000ms -9200ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(6) {
+  -webkit-clip-path: polygon(-5% 0, 5% 0, 45% 100%, 25% 100%);
+          clip-path: polygon(-5% 0, 5% 0, 45% 100%, 25% 100%);
+  -webkit-animation: wave 2000ms -9000ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(7) {
+  -webkit-clip-path: polygon(0% 0, 10% 0, 50% 100%, 30% 100%);
+          clip-path: polygon(0% 0, 10% 0, 50% 100%, 30% 100%);
+  -webkit-animation: wave 2000ms -8800ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(8) {
+  -webkit-clip-path: polygon(5% 0, 15% 0, 55% 100%, 35% 100%);
+          clip-path: polygon(5% 0, 15% 0, 55% 100%, 35% 100%);
+  -webkit-animation: wave 2000ms -8600ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(9) {
+  -webkit-clip-path: polygon(10% 0, 20% 0, 60% 100%, 40% 100%);
+          clip-path: polygon(10% 0, 20% 0, 60% 100%, 40% 100%);
+  -webkit-animation: wave 2000ms -8400ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(10) {
+  -webkit-clip-path: polygon(15% 0, 25% 0, 65% 100%, 45% 100%);
+          clip-path: polygon(15% 0, 25% 0, 65% 100%, 45% 100%);
+  -webkit-animation: wave 2000ms -8200ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(11) {
+  -webkit-clip-path: polygon(20% 0, 30% 0, 70% 100%, 50% 100%);
+          clip-path: polygon(20% 0, 30% 0, 70% 100%, 50% 100%);
+  -webkit-animation: wave 2000ms -8000ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(12) {
+  -webkit-clip-path: polygon(25% 0, 35% 0, 75% 100%, 55% 100%);
+          clip-path: polygon(25% 0, 35% 0, 75% 100%, 55% 100%);
+  -webkit-animation: wave 2000ms -7800ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(13) {
+  -webkit-clip-path: polygon(30% 0, 40% 0, 80% 100%, 60% 100%);
+          clip-path: polygon(30% 0, 40% 0, 80% 100%, 60% 100%);
+  -webkit-animation: wave 2000ms -7600ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(14) {
+  -webkit-clip-path: polygon(35% 0, 45% 0, 85% 100%, 65% 100%);
+          clip-path: polygon(35% 0, 45% 0, 85% 100%, 65% 100%);
+  -webkit-animation: wave 2000ms -7400ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(15) {
+  -webkit-clip-path: polygon(40% 0, 50% 0, 90% 100%, 70% 100%);
+          clip-path: polygon(40% 0, 50% 0, 90% 100%, 70% 100%);
+  -webkit-animation: wave 2000ms -7200ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(16) {
+  -webkit-clip-path: polygon(45% 0, 55% 0, 95% 100%, 75% 100%);
+          clip-path: polygon(45% 0, 55% 0, 95% 100%, 75% 100%);
+  -webkit-animation: wave 2000ms -7000ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(17) {
+  -webkit-clip-path: polygon(50% 0, 60% 0, 100% 100%, 80% 100%);
+          clip-path: polygon(50% 0, 60% 0, 100% 100%, 80% 100%);
+  -webkit-animation: wave 2000ms -6800ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(18) {
+  -webkit-clip-path: polygon(55% 0, 65% 0, 105% 100%, 85% 100%);
+          clip-path: polygon(55% 0, 65% 0, 105% 100%, 85% 100%);
+  -webkit-animation: wave 2000ms -6600ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(19) {
+  -webkit-clip-path: polygon(60% 0, 70% 0, 110% 100%, 90% 100%);
+          clip-path: polygon(60% 0, 70% 0, 110% 100%, 90% 100%);
+  -webkit-animation: wave 2000ms -6400ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(20) {
+  -webkit-clip-path: polygon(65% 0, 75% 0, 115% 100%, 95% 100%);
+          clip-path: polygon(65% 0, 75% 0, 115% 100%, 95% 100%);
+  -webkit-animation: wave 2000ms -6200ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(21) {
+  -webkit-clip-path: polygon(70% 0, 80% 0, 120% 100%, 100% 100%);
+          clip-path: polygon(70% 0, 80% 0, 120% 100%, 100% 100%);
+  -webkit-animation: wave 2000ms -6000ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(22) {
+  -webkit-clip-path: polygon(75% 0, 85% 0, 125% 100%, 105% 100%);
+          clip-path: polygon(75% 0, 85% 0, 125% 100%, 105% 100%);
+  -webkit-animation: wave 2000ms -5800ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5800ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(23) {
+  -webkit-clip-path: polygon(80% 0, 90% 0, 130% 100%, 110% 100%);
+          clip-path: polygon(80% 0, 90% 0, 130% 100%, 110% 100%);
+  -webkit-animation: wave 2000ms -5600ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5600ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(24) {
+  -webkit-clip-path: polygon(85% 0, 95% 0, 135% 100%, 115% 100%);
+          clip-path: polygon(85% 0, 95% 0, 135% 100%, 115% 100%);
+  -webkit-animation: wave 2000ms -5400ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5400ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(25) {
+  -webkit-clip-path: polygon(90% 0, 100% 0, 140% 100%, 120% 100%);
+          clip-path: polygon(90% 0, 100% 0, 140% 100%, 120% 100%);
+  -webkit-animation: wave 2000ms -5200ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+#ui .text:nth-child(26) {
+  -webkit-clip-path: polygon(95% 0, 105% 0, 145% 100%, 125% 100%);
+          clip-path: polygon(95% 0, 105% 0, 145% 100%, 125% 100%);
+  -webkit-animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+
+
+@keyframes wave {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0.9) rotateX(20deg) rotateY(20deg);
+            transform: translate(-50%, -50%) scale(0.9) rotateX(20deg) rotateY(20deg);
+    color: #008000;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1.1) rotateX(0deg) rotateY(0deg);
+            transform: translate(-50%, -50%) scale(1.1) rotateX(0deg) rotateY(0deg);
+    color: #ff8000;
+  }
+}
+
+
+
+.letter {
+    
+    top: -275px; 
+    left: 480px;
+    position:relative;
+     display: inline-block;
+    font-family: 'Do Hyeon', sans-serif;
+    color: white;
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    line-height: 35px; 
+    overflow: hidden;
+}
+.letter:before {
+  position: absolute;
+    font-family: 'Do Hyeon', sans-serif;
+  top: 0;
+  left: 0;
+  
+  word-break: break-all;
+  background-color: #1d1f20;
+}
+
+.letter:nth-child(1):before {
+  content: "avwxa";
+  margin-top: -144px;
+  animation: letter1 3s infinite;
+
+}
+
+
+
+@keyframes letter1 {
+  from {
+    margin-top: -144px;
+  }
+  to {
+    margin-top: 40px;
+  }
+}
+.letter:nth-child(2):before {
+  content: "bbcde";
+  margin-top: 0px;
+  animation: letter2 3s infinite;
+}
+
+
+
+@keyframes letter2 {
+  from {
+    margin-top: 0px;
+  }
+  to {
+    margin-top: 40px;
+  }
+}
+.letter:nth-child(3):before {
+  content: "fghpq";
+  margin-top: -144px;
+  animation: letter3 3s infinite;
+}
+
+
+@keyframes letter3 {
+  from {
+    margin-top: -144px;
+  }
+  to {
+     margin-top: 40px;
+  }
+}
+.letter:nth-child(4):before {
+  content: "klsno";
+  margin-top: -192px;
+  animation: letter4 3s infinite;
+}
+
+
+
+@keyframes letter4 {
+  from {
+    margin-top: -192px;
+  }
+  to {
+     margin-top: 40px;
+  }
+}
+.letter:nth-child(5):before {
+  content: "pqrst";
+  margin-top: -48px;
+animation: letter5 3s infinite;
+}
+
+
+
+@keyframes letter5 {
+  from {
+    margin-top: -48px;
+  }
+  to {
+     margin-top: 40px;
+  }
+}
+.letter:nth-child(6):before {
+  content: "uvtxyz";
+  margin-top: -120px;
+  animation: letter6 3s infinite;
+}
+
+
+@keyframes letter6 {
+  from {
+    margin-top: -120px;
+  }
+  to {
+    margin-top: 40px;
+  }
+}
+.letter:nth-child(7):before {
+  content: "abcde";
+  margin-top: -24px;
+  animation: letter7 3s infinite;
+}
+
+
+@keyframes letter7 {
+  from {
+    margin-top: -24px;
+  }
+  to {
+    margin-top: 40px;
+  }
+}
+.letter:nth-child(8):before {
+  content: "fghqr";
+  margin-top: -144px;
+animation: letter8 3s infinite;
+}
+
+
+
+@keyframes letter8 {
+  from {
+    margin-top: -144px;
+  }
+  to {
+    margin-top: 40px;
+  }
+}
+.letter:nth-child(9):before {
+  content: "klsno";
+  margin-top: -144px;
+  animation: letter9 3s infinite;
+}
+
+
+
+@keyframes letter9 {
+  from {
+    margin-top: -144px;
+  }
+  to {
+    margin-top: 40px;
+  }
+}
+.letter:nth-child(10):before {
+  content: "pqrst";
+  margin-top: -24px;
+  animation: letter10 3s infinite;
+}
+
+
+
+@keyframes letter10 {
+  from {
+    margin-top: -24px;
+  }
+  to {
+   margin-top: 40px;
+  }
+}
+.letter:nth-child(11):before {
+  content: "uvwxz";
+  margin-top: -216px;
+  animation: letter11 3s infinite;
+}
+
+
+
+@keyframes letter11 {
+  from {
+    margin-top: -216px;
+  }
+  to {
+    margin-top: 40px;
+  }
+}
+.letter:nth-child(12):before {
+  content: "abcde";
+  margin-top: -168px;
+  animation: letter12 3s infinite;
+}
+
+
+
+@keyframes letter12 {
+  from {
+    margin-top: -168px;
+  }
+  to {
+    margin-top: 40px;
+  }
+}
+.letter:nth-child(13):before {
+  content: "fghkn";
+  margin-top: 0px;
+  animation: letter13 3s infinite;
+}
+
+
+@keyframes letter13 {
+  from {
+    margin-top: 0px;
+  }
+  to {
+    margin-top: 40px;
+  }
+}
+.letter:nth-child(14):before {
+  content: "klmno";
+  margin-top: -48px;
+  animation: letter14 3s infinite;
+}
+
+
+@keyframes letter14 {
+  from {
+    margin-top: -48px;
+  }
+  to {
+    margin-top: 40px;
+  }
+}
+.letter:nth-child(15):before {
+  content: "pqrst";
+  margin-top: -96px;
+  animation: letter15 3s infinite;
+}
+
+
+@keyframes letter15 {
+  from {
+    margin-top: -96px;
+  }
+  to {
+   margin-top: 40px;
+  }
+}
+.letter:nth-child(16):before {
+  content: "uvnxyz";
+  margin-top: -24px;
+  animation: letter16 3s infinite;
+}
+
+
+
+@keyframes letter16 {
+  from {
+    margin-top: -24px;
+  }
+  to {
+   margin-top: 40px;
+  }
+}
+
+
+
+
+

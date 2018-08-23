@@ -1,0 +1,169 @@
+@media screen and (max-width:768px){
+    
+    
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,900');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:700');
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+    @import url('https://fonts.googleapis.com/css?family=Lato');
+    
+html, body {
+
+    background-color: black !important;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;  
+    overflow: hidden; 
+            }
+    
+    
+.logo1 {
+  
+    display: none;
+    }
+
+
+.letters-container {
+     display: block;
+    top: 15px;
+    left:20px;
+  position: fixed;
+    z-index: 999;
+  
+}
+
+.letters-container .letters span {
+  color: #497aff;
+  font-family: 'Exo', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+ transform: translateX(-10px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.letter-active {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}
+
+
+
+
+
+ .hamburg
+{
+    
+    position: fixed;
+    top:15px;
+    right: 15px;
+    z-index: 999;
+   animation: totop 2s none 0s ease;
+    
+  
+}
+    
+@keyframes totop{
+    0%{
+        transform: rotate(0) translateX(300%) translateY(0%);
+        }
+    91%{
+        transform: rotate(0);
+        }
+    100%{
+        transform: rotate(0);
+        }
+}
+
+    .not{
+       visibility: hidden;
+    }
+    
+    
+    
+.line-scale-party>div, .line-scale-pulse-out-rapid>div, .line-scale-pulse-out>div, .line-scale>div, .line-spin-fade-loader>div, .ball-beat>div, .ball-scale-multiple>div
+{
+    background-color: #497aff !important;
+      margin: 3 !important;
+    padding: 0 !important;
+ 
+    height: 25px !important;
+    width: 4px !important;
+    
+    
+        
+}
+    
+  
+
+.slidenavmain{
+    
+    position: fixed;
+    top: 60px;
+   left: 45px;
+    z-index: 999;
+    
+
+}
+
+#u {
+
+    list-style: none;
+}
+#u .l{
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    padding-right: 31px;
+}
+
+#u .l a{
+     color: black;
+    text-decoration: none;
+    background-color: transparent;
+    transition: all 0.8s ease;
+    
+}
+#u .l a:hover {
+    color: #497aff;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.formobile{
+    
+   
+    position: fixed;
+    left: -150px;
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+    z-index: 1;
+  
+    
+/*        background-color: rgba(0, 0, 0, .7);*/
+    }
+    
+.formobile{
+    visibility: hidden;
+  
+}
+
+/*
+.formobile{
+    animation: sin 1.6s none 0s ease;
+}
+    @keyframes sin{
+    0%{
+        transform: rotate(0) translateX(-200px);
+        }
+
+    90%{
+        transform: rotate(0) translateX(0px);
+        }
+    101%{
+        transform: rotate(0) translateX(0px);
+        }
+}
+*/
+
+
