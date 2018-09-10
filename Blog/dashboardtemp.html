@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
     <html ng-app="myApp">
-<head>
+  <head>
     <title>Blog</title>
      <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,8 +18,8 @@
     
  <!-- Theme CSS -->
     <link href="./assets/css/dashboard.css" rel="stylesheet">
-    
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
     </head>
 <body>
     
@@ -33,11 +33,12 @@
             <div class="row">
                 <div class="col-md-12">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-<!--                    <h4>Welcome, Jerin</h4>-->
-<!--                    <a href="/logout"><h5>Log Out</h5></a>-->
+                    <h4>Welcome, <%= user%></h4>
+                    <a href="/logout"><h5>Log Out</h5></a>
                     <div class="heading text-center">
                         <h1>DASHBOARD</h1>
                         </div>
+                    <a href="/addpost"><button class="apost">ADD POST</button></a>
                     </div>
                 </div>
             </div>
@@ -46,36 +47,51 @@
     
 <div class="container" id="space">
         <div class="row">
-
-            <div class=" col-md-9 ">
-
-                <form action="/addpost" method="POST" >
-                    
-                    
-                 <div class="form-group">
-                  <input type="text" name="title" placeholder="Title" class="form-control" required>
-                    </div>
-                 <div class="form-group">
-                    
-                     <textarea placeholder="Body" name="content" class="form-control" style="height: 150px;" required></textarea>
-                    </div>
-                    <div class="postb">
-                     <button id="po" type="submit">Post</button>
-                    </div>
-                        <div class="updateb">
-                        <button id="up">Update</button>
-                   </div>
-                    
-                    
-                  
-                </form>
+            <div class="col-md-12">
             
+            <h3>Posts</h3>
+           
+      
+            <div class="postarea"> 
                
-     
+                <div class="container">
+    <div class="row" ng-controller="appCtrl">
+        <div class="col-md-6" ng-repeat="x in posts">
+            
+        
+        <div class="post-preview" >
+            
+                    <a href="/post/{{post._id}}">
+                        
+                        <h2 class="post-title"> 
+                           {{x.title}}
+                        </h2>
+            </a>
+            
+                        <h4 class="post-content">
+                            {{x.content}}
+                        </h4>
+                   <button id="upd"><i class="fas fa-edit" style="font-size: 20px;"></i></button>
+                    <button id="del"><i class="fas fa-trash" style="font-size: 20px;"></i></button>
+                  <hr>
+            
+                </div>
+
             </div>
+    </div>
+    </div>
+                
+                
+                
+            </div>
+            </div>
+               
+        </div>
+            
+          
                 
  </div>
-    </div>
+  
     
     </body>
 
@@ -89,11 +105,23 @@
 <script type="text/javascript">
 		var app = angular.module('myApp',[]); // Declaring Module
 
-		app.controller('BlogController',function($scope){
-            $
-            }
-	
+		app.controller('appCtrl',function($scope){
+            
+           $scope.posts = [
+                {title:"jasnkdkbdkcbwd cbdcjkhd cndmsbchjdwbwb hdcbwdjcb jhdw", content:"abbds dvjhd dcvd chdjbchbdj jchbdbvhd chdjch"},
+                {title:"ajdvvw hjcbdw jhcbdb djbwb bddhjw djwb  jdwb dcb cdhbc", content:"ab"},
+                {title:"pj", content:"nike"},
+                {title:"tj", content:"dillshaw"},
+                {title:"ja", content:"ab"},
+                {title:"aj", content:"ab"},
+                {title:"pj", content:"nike"},
+                {title:"tj", content:"dillshaw"}
+            ];
 			
 		});
 	</script>
 </html>
+        
+        
+        
+        

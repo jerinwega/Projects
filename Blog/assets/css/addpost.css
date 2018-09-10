@@ -14,6 +14,8 @@ body {
     
     height: 200px;
     background-image: linear-gradient(to right, #fe8c00, #f83600);
+     border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 
@@ -26,38 +28,12 @@ h1{
     font-weight: 900;
     font-size: 80px;
     top: 15px;
-    left: -150px;
+    left: -60px;
     transform: translate(50%, 50%);
     letter-spacing: 1.2px; 
 }
 
 
-h3{
-    font-size: 30px;
-    position: absolute;
-    top: -190px;
-    left: 630px;
-    font-family: 'Russo One', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1.2px; 
-    text-align: center;
-}
-
-.postarea{
-    
-    position: absolute;
-    top: -120px;
-    left: 75px;
-    width: 1200px;
-    height: 480px;
-    color: black;
-    font-family: 'Lato';
-    font-size: 16px;
-    border-radius: 10px;
-    border: 2px solid green;
-    overflow: auto;
-    
-}
 h4{
     width: 100%;
     color: white;
@@ -70,6 +46,83 @@ h4{
     
     
 }
+
+#space{
+    position: absolute;
+ top: 330px;
+    left: 280px;
+   
+}
+
+
+
+h2{
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+    padding: 2px;
+}
+
+
+.form-control{
+    border: 2px solid green;
+    border-radius: 10px;
+    resize: none;
+    overflow: auto;
+    font-size: 16px;
+}
+
+.form-control{
+height: 50px;
+    
+}
+#po{
+    position: absolute;
+/*    padding-top: 10px;*/
+    color: black;
+    width: 120px;
+    height: 48px;
+    top: 230px;
+    left: 310px;
+    font-size: 18px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 20px;
+     font-family: 'Lato';
+    font-weight: 600;
+    transition: 1s;
+    border: 2px solid green;
+    
+}
+#po:hover{
+    background-color: green;
+    color: white;
+}
+#up{
+    position: absolute;
+    color: black;
+    width: 120px;
+    height: 48px;
+    top: 230px;
+    left: 440px;
+    font-size: 18px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 20px;
+     font-family: 'Lato';
+    font-weight: 600;
+    transition: 1s;
+    border: 2px solid green;
+    
+}
+#up:hover{
+    background-color: green;
+    color: white;
+}
+
 h5{
     width: 100%;
     position: absolute;
@@ -83,32 +136,3 @@ h5{
 h5:hover{
     color: black;
 }
-#space{
-    position: absolute;
- top: 400px;
-    left: 50px;
-}
-
-.apost{
-    position: absolute;
-    text-decoration: none;
-    color: black;
-    width: 140px;
-    height: 50px;
-    top: 78px;
-    left: 800px;
-    font-size: 18px;
-    text-align: center;
-    padding: 10px;
-    background-color: transparent;
-    border-radius: 20px;
-     font-family: 'Lato';
-    font-weight: 600;
-    transition: 1s;
-    border: 2px solid green;
-}
-.apost:hover{
-    background-color: green;
-    color: white;
-}
-

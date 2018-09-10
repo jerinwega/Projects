@@ -36,9 +36,8 @@
 <!--                    <h4>Welcome, Jerin</h4>-->
                     <a href="/logout"><h5>Log Out</h5></a>
                     <div class="heading text-center">
-                        <h1>DASHBOARD</h1>
+                        <h1>ADD POST</h1>
                         </div>
-                    <a href="/addpost"><button class="apost">ADD POST</button></a>
                     </div>
                 </div>
             </div>
@@ -47,26 +46,37 @@
     
 <div class="container" id="space">
         <div class="row">
-            <div class="col-md-12">
+
+            <div class=" col-md-9 ">
+
+                <form action="/addpost" method="POST" >
+                    
+                    
+                 <div class="form-group">
+                  <input type="text" name="title" placeholder="Title" class="form-control" required>
+                    </div>
+                 <div class="form-group">
+                    
+                     <textarea placeholder="Body" name="content" class="form-control" style="height: 150px;" required></textarea>
+                    </div>
+                    <div class="postb">
+                       <input type="submit" id="po" value="Post">
+                     
+                    </div>
+                         <div class="updateb">
+                             <a href="/updatepost/<%= posts[i].title %>" ><button id="up">Update</button></a>
+                   </div>
+                    
+                    
+                  
+                </form>
             
-            <h3>Posts</h3>
-           
-      
-            <div class="postarea"> 
                
-                
-                
-                
-                
+     
             </div>
-            </div>
-               
-        </div>
-            
-          
                 
  </div>
-  
+    </div>
     
     </body>
 
@@ -77,14 +87,16 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
+<!--
 <script type="text/javascript">
 		var app = angular.module('myApp',[]); // Declaring Module
 
 		app.controller('BlogController',function($scope){
-            $
-            }
+            
+            
 	
 			
 		});
 	</script>
+-->
 </html>

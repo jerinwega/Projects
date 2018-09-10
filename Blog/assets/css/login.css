@@ -14,6 +14,8 @@ body {
     
     height: 350px;
     background-image: linear-gradient(to right, #fe8c00, #f83600);
+     border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 
@@ -43,10 +45,10 @@ position: absolute;
     position: absolute;
     text-decoration: none;
     color: black;
-    width: 140px;
+    width: 130px;
     height: 50px;
     top: 80px;
-    left: 420px;
+    left: 410px;
     font-size: 18px;
     text-align: center;
     padding: 10px;

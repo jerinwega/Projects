@@ -10,112 +10,170 @@ body {
     padding: 0;
     overflow: hidden;
 }
-.blogbg{
-    
+
+.blogbg {
+
     height: 200px;
     background-image: linear-gradient(to right, #fe8c00, #f83600);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 
-h1{
-     margin: 0;
+
+h1 {
+    margin: 0;
     padding: 0;
     position: absolute;
     color: white;
-   font-family: 'Russo One', sans-serif;
+    font-family: 'Russo One', sans-serif;
     font-weight: 900;
     font-size: 80px;
     top: 15px;
     left: -150px;
     transform: translate(50%, 50%);
-    letter-spacing: 1.2px; 
-}
-
-
-h4{
-    width: 100%;
-    color: white;
-    font-family: 'Russo One', sans-serif;
-    position: absolute;
     letter-spacing: 1.2px;
-    left: 920px;
-    top: 35px;
-    text-align: center;
-    
-    
 }
 
-#space{
+
+h3 {
+    font-size: 30px;
     position: absolute;
- top: 330px;
-    left: 280px;
-   
-}
-
-
-
-h2{
-    text-align: center;
-    font-family: 'Lato';
-    font-size: 18px;
-    font-weight: 600;
-    color: black;
+    top: -190px;
+    left: 620px;
+    font-family: 'Russo One', sans-serif;
     text-transform: uppercase;
-    padding: 2px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    color: gray;
 }
 
+.postarea {
 
-.form-control{
-    border: 2px solid green;
-    border-radius: 10px;
-    resize: none;
-    overflow: auto;
+    position: absolute;
+    top: -110px;
+    left: 220px;
+    width: 900px;
+    height: 480px;
+    color: black;
+    font-family: 'Lato';
     font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid green;
+    overflow: auto;
+    
+
 }
 
-.form-control{
-height: 50px;
-    
-}
-#po{
+
+#us {
+    color: white;
     position: absolute;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 1.2px;
+    left: -320px;
+}
+
+h5 {
+    width: 100%;
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    left: 1022px;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 1.2px;
+    transition: 1s;
+}
+
+h5:hover {
     color: black;
-    width: 120px;
-    height: 48px;
-    top: 230px;
-    left: 310px;
-    font-size: 18px;
+}
+
+#space {
+    position: absolute;
+    top: 400px;
+    left: 50px;
+}
+
+.apost {
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    width: 140px;
+    height: 50px;
+    top: 78px;
+    left: 800px;
+    font-size: 16px;
     text-align: center;
+    padding: 10px;
     background-color: transparent;
     border-radius: 20px;
-     font-family: 'Lato';
-    font-weight: 600;
+    font-family: 'Lato';
+    font-weight: 900;
     transition: 1s;
     border: 2px solid green;
-    
 }
-#po:hover{
+
+.apost:hover {
     background-color: green;
     color: white;
 }
-#up{
-    position: absolute;
-    color: black;
-    width: 120px;
-    height: 48px;
-    top: 230px;
-    left: 440px;
-    font-size: 18px;
-    text-align: center;
-    background-color: transparent;
-    border-radius: 20px;
-     font-family: 'Lato';
+
+.post-preview,
+.post-title,
+.post-content {
+
+   
     font-weight: 600;
-    transition: 1s;
-    border: 2px solid green;
-    
+    position: relative;
+    padding-left: 60px;
+
+
+
 }
-#up:hover{
+.post-title{
+    
+
+ font-family: 'Montserrat', sans-serif;
+}
+.post-content {
+    font-family: 'Lato';
+}
+
+hr {
+    position: relative;
+    left: 60px;
+    height: 1px;
+    color: green;
     background-color: green;
-    color: white;
+    border: none;
+}
+
+
+#upd {
+    position: absolute;
+    color: gray;
+    background-color: transparent;
+    border: 0px;
+    top: 8px;
+    left: 690px;
+
+
+}
+
+#upd:hover {
+    color: deepskyblue;
+}
+
+#del {
+    position: absolute;
+    color: gray;
+    background-color: transparent;
+    border: 0px;
+    top: 8px;
+    left: 725px;
+}
+
+#del:hover {
+    color: firebrick;
 }

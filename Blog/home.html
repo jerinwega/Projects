@@ -44,81 +44,31 @@
     </header>
 
 
-    
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-1 col-md-11">
+            
+        <div class="post-preview" ng-repeat="post in posts">
+                    <a href="/post/{{post._id}}">
+                        
+                        <h2 class="post-title"> 
+                            {{ post.title }}
+                        </h2>
+            </a>
+            
+                        <h4 class="post-content">
+                           {{ post.content }}
+                        </h4>
+                   
+                    <p class="post-meta">Posted by<a href="#"> Jerin Abraham</a> on <script>document.write(new Date().toLocaleDateString()); </script></p>
+                </div>
+            </div>
+    </div>
+    </div>
+                
+                
+                
 <!--
-                <div class="post-preview">
-                    <a href="/blog/exploiting-insecure-file-extraction-in-python-for-code-execution">
-                        <h2 class="post-title">
-                            Exploiting insecure file extraction in Python for code execution
-                        </h2>
-                        <h4 class="post-subtitle">
-                           Compressed file extraction with insecure code vulnerable to path traversal in Python can result in arbitrary code execution by overwriting __init__.py
-                        </h4>
-                    </a>
-                    <p class="post-meta">Posted by <a onclick="$('#author_profile').modal('show');">Ajin Abraham</a> on Sep 28 2017</p>
-                </div>
-                
-                
-                <div class="post-preview">
-                    <a href="/blog/exploiting-deserialization-bugs-in-nodejs-modules-for-remote-code-execution">
-                        <h2 class="post-title">
-                            Exploiting deserialization bugs in Node.js modules for Remote Code Execution
-                        </h2>
-                        <h4 class="post-subtitle">
-                           Untrusted data passed into unserialize() function  in node-serialize module can be exploited to achieve arbitrary code execution by passing a serialized JavaScript Object with an Immediately invoked function expression (IIFE).
-                        </h4>
-                    </a>
-                    <p class="post-meta">Posted by <a onclick="$('#author_profile').modal('show');">Ajin Abraham</a> on Feb  8 2017</p>
-                </div>
-                
-                
-                <div class="post-preview">
-                    <a href="/blog/server-side-template-injection-in-tornado">
-                        <h2 class="post-title">
-                            Server Side Template Injection in Tornado
-                        </h2>
-                        <h4 class="post-subtitle">
-                           This post explains Server Side Template Injection (SSTI) in Python tornado web framework.
-                        </h4>
-                    </a>
-                    <p class="post-meta">Posted by <a onclick="$('#author_profile').modal('show');">Ajin Abraham</a> on Jul  3 2016</p>
-                </div>
-                
--->
-
-<!--
-                
-                <div class="post-preview">
-                    <a href="/blog/instamojo-woocommerce-plugin-xss">
-                        <h2 class="post-title">
-                            Instamojo Woocommerce Plugin XSS
-                        </h2>
-                        <h4 class="post-subtitle">
-                           We are using Instamojo as a payment gateway for Indian customers in our security education platform OpSecX. Instamojo provides a plugin that can be used with WooCommerce. To ensure our customers safety we used to do a code review and security analysis on the plugins we use. Our security assessment revealed that Instamojo plugin is affected by a reflected cross site scripting (XSS).
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                        </h4>
-                    </a>
-                    <p class="post-meta">Posted by <a onclick="$('#author_profile').modal('show');">Ajin Abraham</a> on Apr 13 2016</p>
-                </div>
-                
-                
-                <div class="post-preview">
-                    <a href="/blog/os-x-mavericks-1095-out-of-bound-readwrite-in-memmove">
-                        <h2 class="post-title">
-                            OS X Mavericks 10.9.5 – out of bound read/write in memmove()
-                        </h2>
-                        <h4 class="post-subtitle">
-                           Running cat command on a malformed file in OSX Maverick&#39;s Terminal.app results in crash. This post explains the crash analysis. Code execution was not achieved due to limited buffer.
-                        </h4>
-                    </a>
-                    <p class="post-meta">Posted by <a onclick="$('#author_profile').modal('show');">Ajin Abraham</a> on Sep  9 2015</p>
-                </div>
-                
                 
                 
                 <hr>

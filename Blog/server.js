@@ -28,13 +28,6 @@ app.use(session({
 }));
 
 
-//app.use(function (req, res, next) {
-//  
-//  var cookie = req.cookies.cookieName;
-//console.log('cookie exists', cookie);
-//});
-
-
 app.use('/assets', express.static('assets'));
 
 app.use(bodyparser.urlencoded({
@@ -82,15 +75,22 @@ app.get('/dashboard', (req, res) => {
 
     if (req.session.user && req.cookies.cookie_id) {
         var auth = database.collection('ja_auth').findOne({}, function (err, results) {
-            res.render('addpost.ejs', {
-                ja_auth: results
+        var posted = database.collection("posts").find({}).toArray(function (err, posts) {
+            
+            res.render('dashboard.ejs', {
+                ja_auth: results,
+                user: results.user,
+                posts: posts
+    
             });
-        
-            //         res.send('<h4>Welcome</h4>');
+
         });
+             });
+
     } else {
         res.redirect('/login');
     }
+   
 });
 
 
@@ -105,31 +105,29 @@ app.post('/auth', function (req, response) {
 
             //  if (bcrypt.compareSync(req.body.pass, results['pass'])) {}
 
-            bcrypt.compare(req.body.pass, results['pass'], function(err, res) {
-                
-                console.log(res);
-                
-                 if (res == true) {
-                        var data =  {
-                                user: req.body.user,
-                                pass: req.body.pass
-                                    }
+            bcrypt.compare(req.body.pass, results['pass'], function (err, res) {
+
+                //                console.log(res);
+
+                if (res == true) {
+                    var data = {
+                        user: req.body.user,
+                        pass: req.body.pass
+                    }
 
                     req.session.user = data;
-
+                    
                     response.redirect('/dashboard');
-           
-          }
-                else{
-                     response.redirect('/login');
+
+                } else {
+                    response.redirect('/login');
                 }
-                });
-              
-         
-           
-                
-        } 
-        else {
+            });
+
+
+
+
+        } else {
             response.redirect('/login');
         }
 
@@ -138,19 +136,59 @@ app.post('/auth', function (req, response) {
     });
 
 });
-app.post('/addpost', (req, res) => {
-    
-    database.collection('posts').save(req.body, function(err, request){
-        if(err) return console.log(err);
-        console.log('saved to database');
-         res.render('dashboard.ejs', {
-                posts: request
-            });
-    });
-    
+
+app.get('/addpost', (req, res) => {
+
+    if (req.session.user && req.cookies.cookie_id) {
+        res.render('addpost.ejs', {
+            posts: res
+        });
+
+    } else {
+        res.redirect('/login');
+    }
 });
 
+
+app.post('/addpost', (req, res) => {
+
+    database.collection('posts').save(req.body, function (err, request) {
+        if (err) return console.log(err);
+        
+        });
+
  
+    res.redirect('/dashboard');
+
+});
+
+app.get('/updatepost:title', function(req, res){
+    database.collection('posts').find({}).toArray(function (err, response){
+        console.log(response);
+        res.redirect('/addpost');
+    });
+});
+
+app.post('/updatepost:title', function(req, res){
+    database.collection('posts').updateOne({ title: req.body.title,
+      content: req.body.content}, req.body, function(err, result){
+        if(err) return console.log(err);
+        console.log('Details updated successfully');
+        res.redirect('/dashboard');
+    });
+});
+
+
+app.get('/deletepost', (req, res) => {
+     database.collection('posts').deleteOne({}, function(err,result){
+        if(err) return console.log(err);
+        console.log('post is successfully deleted');
+        res.redirect('/dashboard');
+    });
+});
+
+
+
 app.get('/logout', (req, res) => {
     if (req.session.user && req.cookies.cookie_id) {
         res.clearCookie('cookie_id');
@@ -159,24 +197,6 @@ app.get('/logout', (req, res) => {
         res.redirect('/login');
     }
 });
-
-
-
-//     Post.find({}, (err, posts) => {
-//      res.render('dashboard', { posts: posts})
-//   });
-//app.post('/addpost', (req, res) => {
-//    var Post =  {
-//                                title: req.body.title,
-//                                content: req.body.content
-//                                    }
-//    var postData = new Post(req.body);
-//    postData.save().then( result => {
-//        res.redirect('/dashboard');
-//    }).catch(err => {
-//        res.status(400).send("Unable to save data");
-//    });
-//});
 
 
 app.use(function (req, res, next) {
